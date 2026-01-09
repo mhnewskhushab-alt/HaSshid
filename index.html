@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hashid ❤️ Nida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lock" class="card">
+  <h2>Private Love Page 🔐</h2>
+  <input id="pass" type="password" placeholder="Enter Password">
+  <br><br>
+  <button onclick="unlock()">Unlock ❤️</button>
+  <p id="error"></p>
+</div>
+
+<div id="content" style="display:none;">
+  <audio controls autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="card">
+    <h1>Hashid ❤️ Nida</h1>
+    <p>My heart beats only for you 💖</p>
+    <a class="btn" href="proposal.html">Open Proposal 💍</a>
+  </div>
+</div>
+
+<script>
+function unlock(){
+  if(document.getElementById("pass").value === "nida"){
+    document.getElementById("lock").style.display="none";
+    document.getElementById("content").style.display="block";
+  } else {
+    document.getElementById("error").innerText="Wrong password ❤️";
+  }
+}
+</script>
+
+</body>
+</html>
